@@ -1,0 +1,3 @@
+#ifndef QUADRILATERAL_HPP
+#define QUADRILATERAL_HPP
+#endif
