@@ -1,4 +1,8 @@
 #include "figure.hpp"
-#include "unknown_figure.hpp"
-#include "quadrilateral.hpp"
-#include "triangle.hpp"
+
+
+int main(){
+    std::cout << "Количество сторон фигуры: \n";
+    Quadrilateral q;
+    return 0;
+}
