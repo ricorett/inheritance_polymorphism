@@ -15,8 +15,6 @@ public:
         void print_number(){
                 std::cout << side_number << std::endl;
         };
-
-
         
 };
 
@@ -36,7 +34,6 @@ public:
         side_number = 4;
         };
         
-       
 };
 
-#endif
+#endif //FIGURE_HPP
