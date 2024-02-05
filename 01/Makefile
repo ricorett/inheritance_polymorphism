@@ -1,7 +1,7 @@
 all: build
 
-build: main.cpp address.hpp address.cpp
-	g++ -std=c++2b main.cpp address.cpp
+build: main.cpp figure.hpp 
+	g++ -std=c++2b main.cpp 
 
 
 clean:
