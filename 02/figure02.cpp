@@ -1,4 +1,4 @@
-#include "figure02.hpp"
+#include "figure02.h"
 
 void print_info(){
 
@@ -7,9 +7,9 @@ void print_info(){
 
 }
 
-bool angelsSum(){
-    if (((A+B)+C) > 180){
-        return false;
-    }
-    return true;
-}
+// bool angelsSum(){
+//     if (((A+B)+C) > 180){
+//         return false;
+//     }
+//     return true;
+// }

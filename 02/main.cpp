@@ -1,4 +1,6 @@
-#include "figure02.hpp"
+#include "figure02.h"
+
+void print_info();
 
 int main(){
 
