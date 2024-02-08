@@ -7,6 +7,4 @@ public:
         Triangle(){
         side_number = 3;
         };
-        bool angelsSum();
-        
 };

@@ -7,9 +7,23 @@ void print_info(){
 
 }
 
-// bool angelsSum(){
-//     if (((A+B)+C) > 180){
-//         return false;
-//     }
-//     return true;
-// }
+
+ int Figure::get_side_a(){
+    return a;
+}
+
+ int Figure::get_side_b(){
+    return b;
+}
+int Figure::get_side_c(){
+    return c;
+}
+int Figure::get_angle_a(){
+    return A;
+}
+int Figure::get_angle_b(){
+    return B;
+}
+int Figure::get_angle_c(){
+    return C;
+}
