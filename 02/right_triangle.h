@@ -1,5 +1,7 @@
 #pragma once
 #include "triangle.h"
 
-class Rectangular_triangle : public Triangle{};
+class Right_triangle : public Triangle{
+    public:
+};
 

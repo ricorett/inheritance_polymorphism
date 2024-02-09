@@ -4,7 +4,7 @@
 class Figure{
 
 public:
-        Figure(){
+        Figure(int a, int b, int c, int d, int A, int B, int C, int D){
         side_number = 0;
         a = 0;
         b = 0;
@@ -13,14 +13,11 @@ public:
         B = 0;
         C = 0;
         };
+
         // void print_number(){ std::cout << side_number << std::endl; };
-        int get_side_a();
-        int get_side_b();
-        int get_side_c();
-        int get_angle_a();
-        int get_angle_b();
-        int get_angle_c();
-       
+        int get_side(int);        
+        int get_angle(int);
+
 protected:
         int side_number;
         int a,b,c;
