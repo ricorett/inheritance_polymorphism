@@ -1,10 +1,11 @@
 #pragma once
 #include "triangle.h"
+#include <memory>
 
 class Equilateral_triangle : public Triangle{
 public:
-    Equilateral_triangle(int a, int A) : Triangle(int A, int A, int A, int a, int a, int a){
-        A = 60;
-        a = 30;
+    Equilateral_triangle(double a, double A) : Triangle(a,  a, a, A, A, A ){
+        name = std::string("Равносторонний треугольник");
     }
+    
 };

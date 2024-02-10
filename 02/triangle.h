@@ -4,12 +4,14 @@
 class Triangle : public Figure{
 
 public:
-         Triangle(int A, int B, int C, int a, int b, int c) : Figure(3,3){
-                a = 10;
-                b = 20;
-                c = 30;
-                A = 50;
-                B = 60;
-                C = 90;
-         };
+        Triangle(double a, double b, double c, double A, double B, double C){
+                sides.push_back(a);
+                sides.push_back(b);
+                sides.push_back(c);
+                angles.push_back(A);
+                angles.push_back(B);
+                angles.push_back(C);
+                name = std::string("Треугольник");
+
+        }
 };
