@@ -1,4 +1,12 @@
 #pragma once
-#include "rectangle.h"
+#include "parallelogram.h"
 
-class Square : public Rectangle {};
+
+class Square : public Parallelogramm
+{
+public:
+    Square(double a) : Parallelogramm(a, a, a, a, 90, 90, 90, 90)
+    {
+        name = std::string("Квадрат");
+    }
+};

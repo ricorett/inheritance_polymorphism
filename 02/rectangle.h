@@ -1,11 +1,11 @@
 #pragma once
-#include "figure02.h"
-class Rectangle : public Figure{
+#include "parallelogram.h"
 
+class Rectangle : public Parallelogramm
+{
 public:
-    int d;
-    int D;
-    Rectangle(){
-        side_number = 4;
-        };
+    Rectangle(double a, double b) : Parallelogramm(a, b, a, b, 90, 90, 90, 90)
+    {
+        name = std::string("Прямоугольник");
+    }
 };
