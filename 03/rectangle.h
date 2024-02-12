@@ -8,4 +8,5 @@ public:
     {
         name = std::string("Прямоугольник");
     }
+
 };

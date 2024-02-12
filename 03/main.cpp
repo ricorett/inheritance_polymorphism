@@ -38,6 +38,12 @@ int main()
 void print_info(Figure* f)
 {
     std::cout << f->get_figure_name() << ":" << std::endl;
+    if (f->check_state() == true){
+        std::cout << "Правильная" << std::endl;
+    } else {
+        std::cout << "Неправильная" << std::endl;
+    }
+    std::cout << "Количество сторон: " << f->get_side_count() << std::endl;
    std::cout << "Стороны: ";
     for (int i = 0; i < f->get_side_count(); i++) std::cout << (char)('a' + i) << "=" << f->get_side(i) << " ";    
     std::cout <<std::endl << "Углы: ";                                                                                   

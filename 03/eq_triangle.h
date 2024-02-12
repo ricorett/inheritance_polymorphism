@@ -2,7 +2,7 @@
 #include "triangle.h"
 
 
-class Equilateral_triangle : public Triangle //eq
+class Equilateral_triangle : public Triangle 
 {
 public:
 

@@ -4,6 +4,7 @@
 class Triangle : public Figure{
 
 public:
+
         Triangle(double a, double b, double c, double A, double B, double C){
                 sides.push_back(a);
                 sides.push_back(b);
@@ -14,4 +15,5 @@ public:
                 name = std::string("Треугольник");
 
         }
+
 };

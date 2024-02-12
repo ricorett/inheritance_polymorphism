@@ -11,14 +11,17 @@ public:
       
       Figure() : name("Фигура"){}
       std::string get_figure_name(){return name;}
+      
       int get_side_count(){return sides.size();}
-      int get_angle_coun(){ return angles.size();};
-      bool virtual check_state (){return state;}
+      int get_angle_count(){ return angles.size();};
+      
       
       double get_side(int n){return sides[n];}
       double get_angle(int n){return angles[n];}
+      
+      bool check_state();     
 protected:  
-        bool state;
+      
         std::string name;
         std::vector<double> sides;
         std::vector<double> angles;
