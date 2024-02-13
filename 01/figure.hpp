@@ -7,9 +7,12 @@ class Figure {
 
 public:
   int side_number;
-  std::string name = "Фигура";
+  std::string name;
 
-  Figure() { side_number = 0; };
+  Figure() { 
+        side_number = 0;
+        name = "Фигура";
+   };
   void print_number() { std::cout << side_number << std::endl; };
   void print_name() { std::cout << name << ":" << std::endl; }
 };
