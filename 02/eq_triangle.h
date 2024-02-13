@@ -2,13 +2,10 @@
 #include "triangle.h"
 
 
-class Equilateral_triangle : public Triangle //eq
+class Equilateral_triangle : public Triangle 
 {
 public:
 
-    Equilateral_triangle(double a, double A) : Triangle(a, a, a, A, A, A)
-    {
-        name = std::string("Равносторонний треугольник");
-    }
+    Equilateral_triangle(double a, double A);
 };
 
