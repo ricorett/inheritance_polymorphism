@@ -22,16 +22,25 @@ int main()
     Square kva(10);
     Rhombus rom(10, 20, 30);
 
+
     print_info(&f);
+    std::cout << std::endl;
     print_info(&t);
+    std::cout << std::endl;
     print_info(&rb);
+    std::cout << std::endl;
     print_info(&r);
+    std::cout << std::endl;
     print_info(&prt);
+    std::cout << std::endl;
     print_info(&par);
+    std::cout << std::endl;
     print_info(&pry);
+    std::cout << std::endl;
     print_info(&kva);
+    std::cout << std::endl;
     print_info(&rom);
-    
+
 
     return 0;
 }
