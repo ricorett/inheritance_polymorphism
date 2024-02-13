@@ -11,9 +11,10 @@
 
         }
 
-void Triangle::print_info() 
+    void Triangle::print_info() 
     {
         std::cout << name << ":" << std::endl;
+        std::cout << (check_state() ? "правильная" : "неправильная") << std::endl;
         std::cout << "Количество сторон: " << sides.size() << std::endl;
         std::cout << "Стороны: ";
         std::cout << "a=" << sides[0] << " ";
@@ -24,4 +25,12 @@ void Triangle::print_info()
         std::cout << "B=" << angles[1] << " ";
         std::cout << "C=" << angles[2] << " ";
         std::cout << std::endl;
+    }
+
+    bool Triangle::check_state(){
+        if (sides.size() != 3) return false;
+        double summ = 0;
+        for (int i = 0; i < 3; i++) summ += angles[i];
+        if (!FLOAT_EQUALS(180, summ)) return false; 
+    return true;
     }

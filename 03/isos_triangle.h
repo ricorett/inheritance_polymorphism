@@ -1,7 +1,8 @@
 #pragma once
 #include "triangle.h"
 
-class Isosceles_triangle : public Triangle //iso
+
+class Isosceles_triangle : public Triangle
 {
 public:
    
@@ -9,4 +10,6 @@ public:
     {
         name = std::string("Равнобедренный треугольник");
     }
+    bool check_state() override;
+    void print_info() override;
 };

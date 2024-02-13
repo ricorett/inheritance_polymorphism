@@ -5,6 +5,10 @@
 #include <string>
 #include <memory>
 
+
+#define EPSILON 0.0000001
+#define FLOAT_EQUALS(x,y) (fabs(x-y) < EPSILON)
+
 class Figure{
 
 public:
@@ -18,8 +22,9 @@ public:
       
       double get_side(int n){return sides[n];}
       double get_angle(int n){return angles[n];}
-      
-      bool check_state();     
+      virtual void print_info() { std::cout << "Неопределенная фигура" << std::endl; }
+      virtual bool check_state() { return true; }
+
 protected:  
       
         std::string name;

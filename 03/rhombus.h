@@ -4,8 +4,7 @@
 class Rhombus : public Parallelogramm
 {
 public:
-    Rhombus(double a, double A, double B) : Parallelogramm(a, a, a, a, A, B, A, B)
-    {
-        name = std::string("Ромб");
-    }
+    Rhombus(double a, double A, double B);
+    bool check_state() override;
+    void print_info() override;
 };

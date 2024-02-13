@@ -1,7 +1,7 @@
 #include "eq_triangle.h"
 #include "figure03.h"
 #include "isos_triangle.h"
-#include "parallelogram.h"
+#include "parallelogramm.h"
 #include "rectangle.h"
 #include "rhombus.h"
 #include "right_triangle.h"
@@ -35,18 +35,4 @@ int main()
 }
 
 
-void print_info(Figure* f)
-{
-    std::cout << f->get_figure_name() << ":" << std::endl;
-    if (f->check_state() == true){
-        std::cout << "Правильная" << std::endl;
-    } else {
-        std::cout << "Неправильная" << std::endl;
-    }
-    std::cout << "Количество сторон: " << f->get_side_count() << std::endl;
-   std::cout << "Стороны: ";
-    for (int i = 0; i < f->get_side_count(); i++) std::cout << (char)('a' + i) << "=" << f->get_side(i) << " ";    
-    std::cout <<std::endl << "Углы: ";                                                                                   
-    for (int i = 0; i < f->get_side_count(); i++) std::cout << (char)('A' + i) << "=" << f->get_angle(i) << " ";
-   std::cout << std::endl << std::endl;
-}
+void print_info(Figure* f){ f->print_info();}

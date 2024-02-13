@@ -6,9 +6,8 @@ class Equilateral_triangle : public Triangle
 {
 public:
 
-    Equilateral_triangle(double a, double A) : Triangle(a, a, a, A, A, A)
-    {
-        name = std::string("Равносторонний треугольник");
-    }
+    Equilateral_triangle(double a, double A);
+    bool check_state() override;
+    void print_info() override;
 };
 

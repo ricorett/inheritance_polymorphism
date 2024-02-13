@@ -1,5 +1,5 @@
 #pragma once
-#include "parallelogram.h"
+#include "parallelogramm.h"
 
 
 class Square : public Parallelogramm
