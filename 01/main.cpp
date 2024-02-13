@@ -6,11 +6,11 @@ int main(){
     Figure f;
     Quadrilateral q;
     std::cout << "Количество сторон фигуры: \n";
-    std::cout << "Фигура: ";
+    f.print_name();
     f.print_number();
-    std::cout << "Треугольник: ";
+    t.print_name();
     t.print_number();
-    std::cout << "Четырехугольник: ";
+    q.print_name();
     q.print_number();
     return 0;
 }

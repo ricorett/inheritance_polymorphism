@@ -15,6 +15,10 @@ public:
         void print_number(){
                 std::cout << side_number << std::endl;
         };
+        std::string name = "Фигура";
+        void print_name(){
+                std::cout << name << ":" << std::endl;
+        }
         
 };
 
@@ -23,8 +27,8 @@ class Triangle : public Figure{
 public:
         Triangle(){
         side_number = 3;
+        name = "Треугольник";
         };
-        
 };
 
 class Quadrilateral : public Figure {
@@ -32,8 +36,8 @@ class Quadrilateral : public Figure {
 public:
         Quadrilateral(){
         side_number = 4;
+        name = "Четырехугольники";
         };
-        
 };
 
 #endif //FIGURE_HPP
