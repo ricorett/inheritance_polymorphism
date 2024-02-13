@@ -6,5 +6,4 @@ class Rhombus : public Parallelogramm
 public:
     Rhombus(double a, double A, double B);
     bool check_state() override;
-    void print_info() override;
 };

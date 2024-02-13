@@ -7,5 +7,4 @@ public:
 
     Right_Triangle(float a, float b, float c, float A, float B);
     bool check_state() override;
-    void print_info() override;
 };

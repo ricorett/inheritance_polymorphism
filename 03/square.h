@@ -8,5 +8,4 @@ public:
     Square(double a);
     
     bool check_state() override;
-    void print_info() override;
 };

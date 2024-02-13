@@ -8,6 +8,6 @@ public:
 
     Equilateral_triangle(double a, double A);
     bool check_state() override;
-    void print_info() override;
+
 };
 

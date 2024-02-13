@@ -11,5 +11,5 @@ public:
         name = std::string("Равнобедренный треугольник");
     }
     bool check_state() override;
-    void print_info() override;
+
 };
