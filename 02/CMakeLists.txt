@@ -1,0 +1,31 @@
+cmake_minimum_required(VERSION 3.22)
+project(Figure)
+
+set(CMAKE_CXX_STANDARD 23)
+
+set(SOURCES
+        main.cpp
+        eq_triangle.cpp
+        isos_triangle.cpp
+        parallelogramm.cpp
+        rectangle.cpp
+        rhombus.cpp
+        right_triangle.cpp
+        square.cpp
+        triangle.cpp
+
+)
+
+set(HEADERS
+        eq_triangle.h
+        figure02.h
+        isos_triangle.h
+        parallelogramm.h
+        rectangle.h
+        rhombus.h
+        right_triangle.h
+        square.h
+        triangle.h
+)
+
+add_executable(Figure ${SOURCES} ${HEADERS})

@@ -4,6 +4,7 @@
 #include <vector>
 #include <string>
 #include <memory>
+#include <cmath>
 
 
 #define EPSILON 0.0000001
