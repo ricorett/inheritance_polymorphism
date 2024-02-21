@@ -10,18 +10,18 @@
         angles.push_back(C);
         angles.push_back(D);
      if (get_side_count() != 4){
-         throw "Некорректное количество сторон";
+         throw FigureError("Некорректное количество сторон");
      }
 //     int sum = angles[0] + angles[1] + angles[2] + angles[3];
 //     if (!(FLOAT_EQUALS(360,sum))) {
 //         throw "Сумма углов не равна 360";
 //     }
-//     if(sides[0] != sides[2] || sides[1] != sides[3]){
-//         throw  "Стороны попарно не равны";
-//     }
-//     if(angles[0] != angles[2] || angles[1] != angles[3]){
-//         throw  "Углы попарно не равны";
-//     }
+     if(sides[0] != sides[2] || sides[1] != sides[3]){
+         throw  FigureError("Стороны попарно не равны");
+     }
+     if(angles[0] != angles[2] || angles[1] != angles[3]){
+         throw  FigureError("Углы попарно не равны");
+     }
    }
 
 void Parallelogramm::print_info()

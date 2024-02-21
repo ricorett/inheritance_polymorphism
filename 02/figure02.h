@@ -33,6 +33,16 @@ protected:
         std::vector<double> angles;
 };
 
+class FigureError : public std::exception {
+public:
 
+    FigureError(const std::string& message): message{message}
+    {}
+    const char* what() const noexcept override
+    {
+        return message.c_str();
+    }
+private:
+    std::string message;
 
-
+};

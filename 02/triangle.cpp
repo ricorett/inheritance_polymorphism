@@ -9,11 +9,11 @@
                 angles.push_back(C);
                 name = std::string("Треугольник");
                 if (get_side_count() != 3){
-                    throw "Некорректное количество сторон";
+                    throw FigureError("Некорректное количество сторон");
                 }
                 int sum = angles[0] + angles[1] + angles[2];
                 if (!(FLOAT_EQUALS(180,sum))) {
-                    throw "Сумма углов не равна 180";
+                    throw FigureError("Сумма углов не равна 180");
                 }
 
         }

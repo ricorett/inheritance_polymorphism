@@ -4,6 +4,6 @@
     {
         name = std::string("Ромб");
         if(angles[0] != angles[2] || angles[1] != angles[3]){
-            throw "Углы попарно не равны";
+            throw FigureError("Углы попарно не равны");
         }
     }
