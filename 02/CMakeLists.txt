@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.22)
 project(Figure)
 
 set(CMAKE_CXX_STANDARD 23)
-
+set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
 set(SOURCES
         main.cpp
         eq_triangle.cpp
@@ -28,4 +28,4 @@ set(HEADERS
         triangle.h
 )
 
-add_executable(Figure ${SOURCES} ${HEADERS})
+add_library(Figure SHARED ${SOURCES} ${HEADERS})
