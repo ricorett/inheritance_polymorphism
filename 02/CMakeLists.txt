@@ -4,7 +4,6 @@ project(Figure)
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
 set(SOURCES
-        main.cpp
         eq_triangle.cpp
         isos_triangle.cpp
         parallelogramm.cpp
@@ -28,4 +27,6 @@ set(HEADERS
         triangle.h
 )
 
-add_library(Figure SHARED ${SOURCES} ${HEADERS})
+add_library(FigureLib SHARED ${SOURCES} ${HEADERS})
+add_executable(FigureExe main.cpp)
+target_link_libraries(FigureLib FigureExe)
